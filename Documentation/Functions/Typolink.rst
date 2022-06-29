@@ -490,13 +490,16 @@ returnLast
    :ref:`data-type-string`
 
 :aspect:`Description`
-   If set to "url", then it will return the URL of the link
+   If set to ``url``, then it will return the URL of the link
    (:php:`$this->lastTypoLinkUrl`).
 
    If set to ``target``, it will return the target of the link.
 
-   So, in these two cases you will not get the value wrapped but the URL
-   or target value returned!
+   If set to ``result``, it will return the entire "result" (href, class, 
+   title, target, etc.) as an object. (New in TYPO3 11!)
+
+   So, in these three cases you will not get the value wrapped but the URL,
+   target or result value returned!
 
 
 .. index:: typolink; section
